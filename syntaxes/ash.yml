@@ -295,7 +295,7 @@ repository:
 
   # ASH singular datatypes like $item[]
   enumerated-constants:
-    begin: \$(string|buffer|bounty|classe?|coinmaster|effect|element|familiar|item|location|monster|phylum|skill|slot|stat|thrall|matcher)\s*\[
+    begin: \$(string|buffer|bounty|classe?|coinmaster|effect|element|familiar|item|location|monster|phylum|skill|slot|stat|thrall|matcher|path)\s*\[
     beginCaptures:
       '1':
         name: storage.type.ash
@@ -308,7 +308,7 @@ repository:
 
   # ASH plural datatypes like $items[]
   enumerated-plural-constants:
-    begin: \$(strings|buffers|classes|coinmasters|effects|elements|familiars|items|locations|monsters|phylums|skills|slots|stats|thralls|matchers)\s*\[
+    begin: \$(strings|buffers|classes|coinmasters|effects|elements|familiars|items|locations|monsters|phylums|skills|slots|stats|thralls|matchers|paths)\s*\[
     beginCaptures:
       '1':
         name: storage.type.ash
